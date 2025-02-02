@@ -26,6 +26,13 @@ function Hero() {
     return () => clearInterval(interval);
   }, []);
 
+  useEffect(() => {
+    carouselImages.forEach((src) => {
+      const img = new Image();
+      img.src = src;
+    });
+  }, []);
+
   return (
     <section
       className="relative grid min-h-screen grid-cols-1 items-center justify-center gap-12 sm:px-10 lg:grid-cols-2 bg-cover bg-center"
@@ -61,6 +68,7 @@ function Hero() {
           <img
             src={profile}
             alt={PROFILE.name}
+            loading="lazy"
             className="hero-img border border-yellow-200 rounded-full w-full h-full object-cover p-1"
           />
         </div>

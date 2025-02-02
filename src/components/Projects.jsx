@@ -1,6 +1,8 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { PROJECTS } from "../constants";
 import Modal from "./Modal";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 
 function Projects() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -10,6 +12,13 @@ function Projects() {
     setSelectedImageIndex(index);
     setIsModalOpen(true);
   };
+
+  useEffect(() => {
+    PROJECTS.forEach(({ imgSrc }) => {
+      const img = new Image();
+      img.src = imgSrc;
+    });
+  }, []);
 
   return (
     <section className="lg:p-16 mb-10 p-2" id="projects">
@@ -24,11 +33,11 @@ function Projects() {
             className="flex-shrink-0 cursor-pointer "
             onClick={() => handleImageClick(index)}
           >
-            <img
+            <LazyLoadImage
               src={project.imgSrc}
               alt={project.title}
+              effect="blur"
               className="h-60 w-full object-cover rounded-lg"
-              loading="lazy"
               onError={(e) => (e.target.src = "/fallback.jpg")}
             />
           </div>
