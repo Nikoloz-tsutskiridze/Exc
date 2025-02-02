@@ -1,16 +1,3 @@
-import { SiAutocad, SiV } from "react-icons/si";
-import { BsBadge3dFill } from "react-icons/bs";
-import { SiCoronarenderer } from "react-icons/si";
-import { SiAdobephotoshop } from "react-icons/si";
-import { SiAutodeskrevit } from "react-icons/si";
-
-export const NAVIGATION_LINKS = [
-  { label: "Skills", href: "#skills" },
-  { label: "Projects", href: "#projects" },
-  { label: "Work Experience", href: "#work" },
-  { label: "Education", href: "#education" },
-];
-
 export const PROFILE = {
   name: "Tamuna Kvantaliani",
   role: "3D Visualizer",
@@ -133,70 +120,5 @@ export const PROJECTS = [
     id: 12,
     title: "Modern Living Room",
     imgSrc: "/Pic/12.jpg",
-  },
-];
-
-export const SKILLS = [
-  {
-    name: "AutoCAD",
-    icon: <SiAutocad className="text-red-600 w-6 h-6" />,
-  },
-  {
-    name: "V-Ray",
-    icon: <SiV className="text-blue-700 w-6 h-6" />,
-  },
-  {
-    name: "3ds Max",
-    icon: <BsBadge3dFill className="text-blue-400 w-6 h-6" />,
-  },
-  {
-    name: "Corona Renderer",
-    icon: <SiCoronarenderer className="text-orange-600 w-6 h-6" />,
-  },
-  {
-    name: "Adobe Photoshop",
-    icon: <SiAdobephotoshop className="text-blue-800 w-6 h-6" />,
-  },
-  {
-    name: "Revit",
-    icon: <SiAutodeskrevit className="text-blue-600 w-6 h-6" />,
-  },
-];
-
-export const EXPERIENCES = [
-  {
-    yearRange: "2021 - 2024",
-    role: "Online sales manager",
-    company: " Archevani",
-    description:
-      "As an online sales manager, I managed customer inquiries, facilitated online transactions, and ensured a seamless shopping experience, focusing on customer satisfaction and operational efficiency.",
-    techStack: [],
-    imageUrl: "/Pic/13.jpg", // Image for this experience
-  },
-];
-
-export const EDUCATION = [
-  {
-    id: 2,
-    degree: "3D Interior Design",
-    institution: "IT STEP Academy",
-    description:
-      "A deep dive into 3D interior design, covering AutoCAD, 3ds Max, V-Ray, Corona Renderer, Adobe Photoshop, 3D modeling, and Revit.",
-    certificatePDF: "/Skillwill.pdf",
-    certificateThumbnail: "/certificate.png",
-  },
-  {
-    id: 1,
-    degree: "3D MAX Visualization",
-    institution: "Level Up",
-    description:
-      "An advanced program focusing on mastering Corona Renderer and 3ds Max, specializing in 3D visualizations.",
-  },
-  {
-    id: 3,
-    degree: "Dentistry (English)",
-    institution: "The University of Georgia",
-    description:
-      "Studying Dentistry, focusing on clinical and theoretical aspects of the profession.",
   },
 ];
