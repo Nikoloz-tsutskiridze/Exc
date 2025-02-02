@@ -114,6 +114,26 @@ export const PROJECTS = [
     title: "Modern Living Room",
     imgSrc: "/Pic/24.jpg",
   },
+  {
+    id: 1,
+    title: "Modern Living Room",
+    imgSrc: "/Pic/1.jpg",
+  },
+  {
+    id: 15,
+    title: "Modern Living Room",
+    imgSrc: "/Pic/15.jpg",
+  },
+  {
+    id: 5,
+    title: "Modern Living Room",
+    imgSrc: "/Pic/5.jpg",
+  },
+  {
+    id: 12,
+    title: "Modern Living Room",
+    imgSrc: "/Pic/12.jpg",
+  },
 ];
 
 export const SKILLS = [

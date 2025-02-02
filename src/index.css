@@ -24,25 +24,3 @@
   scroll-snap-type: x mandatory;
   -webkit-overflow-scrolling: touch;
 }
-
-.project-card {
-  width: 250px;
-  scroll-snap-align: start;
-  border: 1px solid #ddd;
-  padding: 0.5rem;
-  background: #fff;
-  border-radius: 10px;
-  position: relative;
-}
-
-.project-card img {
-  height: 240px;
-  background-color: #f3f3f3;
-  object-fit: cover;
-  transition: opacity 0.3s ease;
-  opacity: 1;
-}
-
-.project-card img.loading {
-  opacity: 0.3;
-}

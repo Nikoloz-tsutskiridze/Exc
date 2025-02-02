@@ -1,8 +1,8 @@
-import Contact from "./components/Contact";
-import Education from "./components/Education";
-import Experience from "./components/Experience";
+// import Contact from "./components/Contact";
+// import Education from "./components/Education";
+// import Experience from "./components/Experience";
 import Hero from "./components/Hero";
-import Skills from "./components/Skills";
+// import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 
 function App() {
@@ -10,11 +10,11 @@ function App() {
     <main className="mx-auto overflow-x-hidden antialiased">
       <div className="relative z-10">
         <Hero />
-        <Skills />
+        {/* <Skills /> */}
         <Projects />
-        <Experience />
-        <Education />
-        <Contact />
+        {/* <Experience /> */}
+        {/* <Education /> */}
+        {/* <Contact /> */}
       </div>
     </main>
   );
